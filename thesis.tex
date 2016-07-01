@@ -1,0 +1,50 @@
+% !TEX program = xelatex
+% !TEX root = thesis.tex
+\documentclass{itmo-thesis}
+
+\usepackage{color}
+\usepackage{gensymb}
+
+\newcommand{\hl}[1]{
+{\color{yellow} #1}}
+
+\begin{document}
+
+\filltitle{ru}{
+    chair              = {Кафедра нанофотоники и метаматериалов},
+    title              = {Исследование различных методик прокрастинации при необходимости оформлять тексты в ТеХе},
+    type               = {master},
+    position           = {студента},
+    group              = {V4140},
+    coursenum          = {12.04.03},
+    course             = {Нанофотоника и Метаматериалы},
+    author             = {Дмитриев Павел Алексеевич},
+    supervisorPosition = {к.\,ф.-м.\,н.},
+    supervisor         = {Самый С.О.К.},
+    reviewerPosition   = {Тоже},
+    reviewer           = {Фрукт},
+    chairHeadPosition  = {д.\,ф.-м.\,н.},
+    chairHead          = {Маракуйя},
+}
+\maketitle
+\tableofcontents
+
+\section{Section McSectionFace}
+\section{Раздел Разделочный}
+
+\newpage
+
+%\setlength{\parskip}{-3pt}
+%\renewcommand\bibsection{\nsection{Литература}}
+%\let\oldbibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldbibliography{#1}
+%  \setlength{\itemsep}{6pt}
+%}
+%\def\BibPrefix{}
+
+
+%\bibliographystyle{disser_m}
+\bibliographystyle{ugost2008ls}
+\bibliography{empty}
+\end{document}
