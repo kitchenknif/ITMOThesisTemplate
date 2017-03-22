@@ -133,7 +133,7 @@
 		\presetkeys[#1]{mytitle}{
 			university = {Федеральное государственное автономное образовательное учреждение высшего образования
 				\\ Санкт-Петербургский национальный исследовательский университет информационных технологий, механики и оптики},
-			faculty = {Факультет фотоники и опто-информатики},
+			faculty = {Физико-технический Факультет},
 			city = {Санкт-Петербург},
 			year = {\the\year},
 			type = {diploma}
@@ -143,8 +143,8 @@
 	\ifthenelse{\equal{#1}{en}}
 	{
 		\presetkeys[#1]{mytitle}{
-			university = {Saint-Petersburg National Research University of Information Technology, Mechanics and Optics},
-			faculty = {Department of Photnoics and Opto-informatics},
+			university = {Saint-Petersburg National Research University of Information Technology,\\ Mechanics and Optics},
+			faculty = {Faculty of Physics and Engineering},
 			city = {Saint-Petersburg},
 			year = {\the\year},
 			type = {diploma}
@@ -242,6 +242,8 @@
     {Bachelor's Thesis}
     }}}
     \\}
+    \vskip 1em
+    \my@title@coursenum@en~---\my@title@course@en
     \vskip 2em
     \ifthenelse{\equal{\my@title@type@en}{coursework}}
     {\normalsize \raggedleft
