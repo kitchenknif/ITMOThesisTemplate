@@ -1,0 +1,51 @@
+% !TEX program = xelatex
+% !TEX root = thesis_en.tex
+\documentclass{itmo-thesis}
+
+\usepackage{color}
+\usepackage{gensymb}
+
+\newcommand{\hl}[1]{
+{\color{yellow} #1}}
+
+\setmainlanguage{english}
+\begin{document}
+
+\filltitle{en}{
+    chair              = {Department of Nanophotonics and Metamaterials},
+    title              = {Procrasitaion as a method of perfecting \Latex templates},
+    type               = {master},
+    position           = {Student},
+    group              = {V4240},
+    coursenum          = {12.04.03},
+    course             = {Nanophotonics and Metamaterials},
+    author             = {Dmitriev Pavel Alekseevich},
+    supervisorPosition = {Very},
+    supervisor         = {Important Dude},
+    reviewerPosition   = {},
+    reviewer           = {},
+    chairHeadPosition  = {Even More},
+    chairHead          = {Important Dude},
+}
+\maketitle
+\tableofcontents
+
+\section{Section McSectionFace}
+\section{I ran out of ideas}
+
+\newpage
+
+%\setlength{\parskip}{-3pt}
+%\renewcommand\bibsection{\nsection{Литература}}
+%\let\oldbibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldbibliography{#1}
+%  \setlength{\itemsep}{6pt}
+%}
+%\def\BibPrefix{}
+
+\nocite{*}
+%\bibliographystyle{disser_m}
+\bibliographystyle{ugost2008ls}
+\bibliography{references}
+\end{document}

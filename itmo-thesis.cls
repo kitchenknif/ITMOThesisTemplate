@@ -104,7 +104,7 @@
 \define@key[ru]{mytitle}{chairHeadPosition}{\def\my@title@chairHeadPosition@ru{#1}}
 \define@key[ru]{mytitle}{year}{\def\my@title@year@ru{#1}}
 \define@key[ru]{mytitle}{city}{\def\my@title@city@ru{#1}}
-\define@choicekey*[ru]{mytitle}{type}{diploma,labwork,coursework,master,bachelor}{\def\my@title@type@ru{#1}}
+\define@choicekey*[ru]{mytitle}{type}{diploma,coursework,master,bachelor}{\def\my@title@type@ru{#1}}
 
 %% Англоязычный вариант
 \define@key[en]{mytitle}{university}{\def\my@title@university@en{#1}}
@@ -180,22 +180,18 @@
     {\large
     \ifthenelse{\equal{\my@title@type@ru}{coursework}}
     {Курсовая работа}
-    {\ifthenelse{\equal{\my@title@type@ru}{labwork}}
-    {Лабораторная работа}
     {\ifthenelse{\equal{\my@title@type@ru}{diploma}}
     {Дипломная работа}
     {\ifthenelse{\equal{\my@title@type@ru}{master}}
     {Магистерская диссертация}
     {\ifthenelse{\equal{\my@title@type@ru}{bachelor}}
     {Бакалаврская работа}
-    }}}}
+    }}}
     \\}
     \vskip 1em
     \my@title@coursenum@ru~---\my@title@course@ru
     \vskip 2em
-    \ifthenelse{\equal{\my@title@type@ru}{labwork}}
-    {}
-    {\ifthenelse{\equal{\my@title@type@ru}{coursework}}
+    \ifthenelse{\equal{\my@title@type@ru}{coursework}}
     {\normalsize \raggedleft
     Научный руководитель:\\
     \my@title@supervisorPosition@ru\ \my@title@supervisor@ru
@@ -208,7 +204,7 @@
     \my@title@supervisorPosition@ru\ \my@title@supervisor@ru\sigspace
     Рецензент:\\
     \my@title@reviewerPosition@ru\ \my@title@reviewer@ru
-    }}
+    }
 \end{center}
 \end{titlepage}
 }
@@ -315,6 +311,7 @@
 \onehalfspacing
 
 %% Переименование "содержания" в "оглавление"
+
 \gappto\captionsrussian{\renewcommand{\contentsname}{Оглавление}}
 
 \let\savenumberline\numberline
